@@ -1,0 +1,40 @@
+# Install uv using below command in terminal -
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# You can list all the versions of Python available for installation
+
+uv python list
+
+# Intall python using uv now -
+
+uv python install 3.14
+
+#To uninstall Python run -
+
+uv python uninstall 3.14
+
+#Creating a new Virtual Environment -
+
+cd folder_name
+uv init
+
+#or just go to parent folder and type -
+
+uv init demo_1 # this will create a new folder with name demo_1 and create a virtual environment inside it
+
+# Convert requirements.txt to pyproject.toml file -
+
+uv add -r requirements.txt
+
+# To add libraries -
+
+uv add pandas
+
+# To create a virtual environment specifically and activate it -
+uv .venv --python 3.13
+source .venv/bin/activate
+
+# To run a file use below -
+
+uv run main.py
