@@ -1,0 +1,23 @@
+1. Check your repository status
+#Open the terminal in your Codespace and run:
+git status
+
+2. Stage your changes
+#To add specific files:
+git add filename1 filename2
+
+#To add everything you created/modified:
+git add .
+
+3. Commit your changes
+#Give a clear commit message:
+git commit -m "Add new files and initial setup"
+
+4. Push to your GitHub repository
+
+#Push to the branch you’re working on (often main or master):
+git push origin main
+#(If your branch is named differently, replace main with that branch name.)
+
+5. Confirm on GitHub
+#Go to your repository page on GitHub. You should see your files under the branch you pushed.
